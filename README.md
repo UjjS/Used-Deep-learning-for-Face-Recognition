@@ -40,4 +40,5 @@ Windows user can use the below command,
 ### CNN architecture and training
      The CNN architecture used here is a variant of the inception architecture [2]. More precisely, it is a variant of the NN4 architecture described in [1] and identified as nn4.small2 model in the OpenFace project. This article uses a Keras implementation of that model whose definition was taken from the Keras-OpenFace project. The architecture details aren’t too important here, it’s only useful to know that there is a fully connected layer with 128 hidden units followed by an L2 normalization layer on top of the convolutional base. These two top layers are referred to as the embedding layer from which the 128-dimensional embedding vectors can be obtained. The complete model is defined in model.py and a graphical overview is given in model.png. A Keras version of the nn4.small2 model can be created with create_model().
       
-
+### Example of the working model
+  ![Training on Celeb Faces](https://i1.wp.com/sefiks.com/wp-content/uploads/2020/02/deepface-tests.png?ssl=1)
